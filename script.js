@@ -8,7 +8,7 @@
         let wn_speed =document.getElementById("speed")
         let humidty=document.getElementById("humidity")
         async function getinfo(cityName){
-           promise = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=df2657cb58694f56b49132400250607&q=${cityName}&days=6&aqi=yes&alerts=yes`);
+           promise = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=df2657cb58694f56b49132400250607&q=${cityName}&days=6&aqi=yes&alerts=yes`);
             response= await promise.json();
             time.innerHTML=response.location.name+","
             country.innerText=response.location.country
